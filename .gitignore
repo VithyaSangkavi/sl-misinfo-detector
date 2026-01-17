@@ -1,0 +1,131 @@
+############################
+# OS / Editor junk
+############################
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# Generic
+*.swp
+*.swo
+*.log
+*.tmp
+*.bak
+
+# JetBrains / VS Code
+.idea/
+.vscode/
+*.iml
+
+############################
+# Root: environment / secrets
+############################
+.env
+.env.*
+*.env.local
+*.env.development.local
+*.env.production.local
+*.env.test.local
+
+############################
+# Python / FastAPI backend
+# (assume in backend/)
+############################
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+backend/venv/
+backend/.venv/
+backend/env/
+
+# Packaging / build
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Pytest / coverage / mypy
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.mypy_cache/
+.dmypy.json
+.pyre/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Backend-specific folders
+backend/__pycache__/
+backend/.pytest_cache/
+backend/.mypy_cache/
+backend/htmlcov/
+backend/*.log
+
+# Reports / analysis artefacts
+backend/reports/
+reports/
+
+# Models & vectorizers (keep or remove from ignore if you want in Git)
+backend/models/*.joblib
+backend/models/*.pkl
+backend/models/*.cbm
+backend/models/*.bin
+
+# Large data files (keep CSV out of Git)
+backend/data/*.csv
+backend/data/*.tsv
+backend/data/*.json
+backend/data/raw/
+backend/data/tmp/
+
+############################
+# Node / React / Vite frontend
+# (assume in frontend/)
+############################
+frontend/node_modules/
+node_modules/
+
+# Vite / build output
+frontend/dist/
+dist/
+*.local
+
+# Vite cache
+frontend/.vite/
+.vite/
+
+# Test coverage
+frontend/coverage/
+coverage/
+
+# NPM / Yarn / PNPM logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+*.pdf
+*.docx
+*.pptx
+
+backend/reports/*.png
+*.png~
